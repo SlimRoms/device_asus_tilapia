@@ -6,13 +6,13 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
 # Inherit some common SLIM stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+$(call inherit-product, vendor/candykat/config/common_full_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/slim/config/gsm.mk)
+$(call inherit-product, vendor/candykat/config/gsm.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/candykat/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/tilapia/full_tilapia.mk)
@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tilapia
-PRODUCT_NAME := slim_tilapia
+PRODUCT_NAME := candykat_tilapia
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := Asus
